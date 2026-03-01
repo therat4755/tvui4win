@@ -1,0 +1,36 @@
+{
+  "bgColor": "#0f0f0f",
+  "accentColor": "#8ab4f8",
+  "apps": [
+    {
+      "name": "Netflix",
+      "icon": "🎬",
+      "path": "https://netflix.com"
+    },
+    {
+      "name": "YouTube",
+      "icon": "▶️",
+      "path": "https://youtube.com"
+    },
+    {
+      "name": "Prime Video",
+      "icon": "📺",
+      "path": "https://primevideo.com"
+    },
+    {
+      "name": "Spotify",
+      "icon": "🎵",
+      "path": "https://spotify.com"
+    },
+    {
+      "name": "Steam",
+      "icon": "🎮",
+      "path": "steam://"
+    },
+    {
+      "name": "Browser",
+      "icon": "🌐",
+      "path": "https://google.com"
+    }
+  ]
+}

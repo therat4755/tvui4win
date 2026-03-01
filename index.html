@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TV Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="logo">TV Dashboard</div>
+      <div class="search">
+        <input type="text" placeholder="Search..." id="searchInput">
+      </div>
+      <div class="user">
+        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='40'%3E%3Ccircle cx='20' cy='20' r='18' fill='%23666'/%3E%3C/svg%3E" alt="User">
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="hero-content" id="heroContent">
+          <h1 id="heroTitle">Welcome</h1>
+          <p id="heroDesc">Your personalized TV experience</p>
+          <button class="btn-play" onclick="launchApp('hero')">▶ Play</button>
+        </div>
+      </section>
+
+      <section class="apps-section">
+        <h2>Apps</h2>
+        <div class="apps-grid" id="appsGrid"></div>
+      </section>
+
+      <section class="apps-section">
+        <h2>Continue Watching</h2>
+        <div class="content-row" id="continueWatching"></div>
+      </section>
+
+      <section class="apps-section">
+        <h2>Recommended</h2>
+        <div class="content-row" id="recommended"></div>
+      </section>
+    </main>
+
+    <div class="settings-panel" id="settingsPanel">
+      <h2>Customize Dashboard</h2>
+      <button class="close-btn" onclick="closeSettings()">×</button>
+      <div class="settings-content">
+        <label>Background Color: <input type="color" id="bgColor" value="#0f0f0f"></label>
+        <label>Accent Color: <input type="color" id="accentColor" value="#8ab4f8"></label>
+        <button onclick="addApp()">+ Add App</button>
+        <button onclick="saveSettings()">Save Settings</button>
+      </div>
+    </div>
+
+    <button class="settings-btn" onclick="openSettings()">⚙</button>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
